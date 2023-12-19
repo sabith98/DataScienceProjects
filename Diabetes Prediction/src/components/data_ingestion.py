@@ -26,6 +26,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("Entered the data ingestion")
         try:
+            column_names = ["pregnancies", "glucose", "blood_pressure","skin_thickness","insulin","bmi","diabetes_pedigree_function","age","outcome"]
             df = pd.read_csv('notebook\\data\\diabetes.csv')
             logging.info('Read the dataset as dataframe')
 
